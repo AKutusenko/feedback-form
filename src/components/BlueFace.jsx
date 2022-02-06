@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import pinkFace from "../images/pinkFace.png";
+import blueFace from "../images/blueFace.png";
 
-const StyledPinkFace = styled.div`
+const StyledBlueFace = styled.div`
   position: absolute;
   top: ${({ top }) => top};
   right: ${({ right }) => right};
@@ -11,8 +11,8 @@ const StyledPinkFace = styled.div`
 
 export default function YellowFaceUp(props) {
   return (
-    <StyledPinkFace {...props}>
-      <img src={pinkFace} alt="pinkFace" width="214px" height="208px" />
-    </StyledPinkFace>
+    <StyledBlueFace {...props}>
+      <img src={blueFace} alt="pinkFace" width="79px" height="97px" />
+    </StyledBlueFace>
   );
 }

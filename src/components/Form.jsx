@@ -6,7 +6,7 @@ import Label from "./Label";
 import Textarea from "./Textarea";
 import H2 from "./H2";
 
-const StyledForm = styled.form`
+const StyledForm = styled.div`
   position: absolute;
   left: 147px;
   top: 179px;

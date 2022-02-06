@@ -5,6 +5,7 @@ const StyledYellowFaceUp = styled.div`
   position: absolute;
   top: ${({ top }) => top};
   left: ${({ left }) => left};
+  right: ${({ right }) => right};
   border-radius: 50%;
 `;
 
