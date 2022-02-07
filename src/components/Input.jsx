@@ -4,6 +4,9 @@ const StyledInput = styled.input`
   border-radius: 10px;
   border: 1px solid #dcdcdc;
   width: ${({ width }) => width || "557px"};
+  @media screen and (max-width: 480px) {
+    width: 280px;
+  }
   height: ${({ height }) => height || "93px"};
   font-style: normal;
   font-weight: normal;

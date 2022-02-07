@@ -10,11 +10,15 @@ const StyledFooter = styled.div`
   background: #fafafa;
   border-top: 1px solid #d8d8d8;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    height: 100px;
+  }
 `;
 
 export default function Footer() {
   return (
-    <StyledFooter>
+    <StyledFooter className="Footer">
       <PinkFace top="0" left="62px" />
       <YellowFaceUp top="65px" right="-20px" />
       <BlueFace top="0" right="128px" />

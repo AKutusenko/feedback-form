@@ -9,16 +9,24 @@ import background from "../images/background.jpg";
 
 const StyledMain = styled.div`
   position: relative;
-  width: 1440px;
+  // width: 1440px;
   height: 928px;
   background-image: url(${background});
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media screen and (min-width: 481px) {
+    width: 1440px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 700px;
+  }
 `;
 
 export default function Main() {
   return (
-    <StyledMain>
+    <StyledMain className="Main">
       <Form />
       <YellowFaceUp top="23px" left="29px" />
       <YellowFaceDown top="520px" right="551px" />

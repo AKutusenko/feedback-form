@@ -5,11 +5,20 @@ import Input from "./Input";
 import Label from "./Label";
 import Textarea from "./Textarea";
 import H2 from "./H2";
+import { postFeedback } from "../services/api-service";
 
 const StyledForm = styled.div`
   position: absolute;
   left: 147px;
   top: 179px;
+
+  @media screen and (max-width: 480px) {
+    position: static;
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export default function Form() {
@@ -38,10 +47,14 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    postFeedback(name, email, message);
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
-    <StyledForm>
+    <StyledForm className="Form">
       <form onSubmit={handleSubmit}>
         <Label>
           <H2>Reach out to us!</H2>

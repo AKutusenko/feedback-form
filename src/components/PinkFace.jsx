@@ -7,6 +7,10 @@ const StyledPinkFace = styled.div`
   right: ${({ right }) => right};
   left: ${({ left }) => left};
   z-index: 99;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export default function YellowFaceUp(props) {

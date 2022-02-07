@@ -6,6 +6,10 @@ const StyledYellowFaceDown = styled.div`
   top: ${({ top }) => top};
   right: ${({ right }) => right};
   z-index: 100;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export default function YellowFaceUp(props) {

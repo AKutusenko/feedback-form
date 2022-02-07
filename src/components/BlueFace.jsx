@@ -7,6 +7,10 @@ const StyledBlueFace = styled.div`
   right: ${({ right }) => right};
   left: ${({ left }) => left};
   z-index: 99;
+
+  @media screen and (max-width: 480px) {
+    right: 5px;
+  }
 `;
 
 export default function YellowFaceUp(props) {

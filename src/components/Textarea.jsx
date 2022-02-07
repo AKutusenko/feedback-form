@@ -4,6 +4,9 @@ const StyledTextarea = styled.textarea`
   border-radius: 10px;
   border: 1px solid #dcdcdc;
   width: 557px;
+  @media screen and (max-width: 480px) {
+    width: 280px;
+  }
   height: 189px;
   font-style: normal;
   font-weight: normal;

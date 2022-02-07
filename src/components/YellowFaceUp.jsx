@@ -7,6 +7,11 @@ const StyledYellowFaceUp = styled.div`
   left: ${({ left }) => left};
   right: ${({ right }) => right};
   border-radius: 50%;
+
+  @media screen and (max-width: 480px) {
+    top: -75px;
+    left: -25px;
+  }
 `;
 
 export default function YellowFaceUp(props) {

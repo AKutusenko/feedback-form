@@ -8,6 +8,10 @@ const StyledList = styled.ul`
   display: flex;
   margin-left: 335px;
   margin-top: 73px;
+
+  @media screen and (max-width: 480px) {
+    margin: 25px 25px;
+  }
 `;
 
 const StyledItem = styled.li`
