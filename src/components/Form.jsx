@@ -36,7 +36,10 @@ export default function Form() {
     }
   };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <StyledForm>
       <form onSubmit={handleSubmit}>

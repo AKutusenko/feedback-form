@@ -26,7 +26,7 @@ const StyledLink = styled.a`
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #fff;
+    background-color: #FAD34F;
   }
 }
 `;
