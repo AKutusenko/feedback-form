@@ -11,6 +11,10 @@ const StyledFooter = styled.div`
   border-top: 1px solid #d8d8d8;
   overflow: hidden;
 
+  @media screen and (min-width: 481px) {
+    width: 1440px;
+  }
+
   @media screen and (max-width: 480px) {
     height: 100px;
   }
