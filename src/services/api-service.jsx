@@ -9,7 +9,9 @@ function postFeedback(name, email, message) {
       email,
       message,
     })
-    .then((response) => console.log(response.data));
+    .then(console.log("Feedback added successfully"))
+    .then((response) => console.log(response.data))
+    .catch((error) => console.log(error));
 }
 
 export { postFeedback };
